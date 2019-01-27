@@ -22,6 +22,7 @@ public class UserController {
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public boolean saveUser(@RequestBody UserDTO user) {
+        System.out.println("user save successfully");
         return userService.saveUser(user);
     }
 
