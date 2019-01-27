@@ -33,6 +33,8 @@ public class CustomerController {
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public boolean saveCustomer(@RequestBody CustomerDTO customer) {
+        System.out.println("Customer save successfully");
+
         return service.saveCustomer(customer);
     }
 
